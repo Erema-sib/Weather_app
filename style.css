@@ -133,7 +133,8 @@ body {
 
   .details {
     display: flex;
-    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 35px;
   }
 
   .search-box {
