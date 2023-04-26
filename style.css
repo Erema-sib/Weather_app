@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #06283d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  background: linear-gradient(to top , rgb(255, 255, 255), 80%, rgb(168, 206, 240));
+  width: 500px;
+  height: auto;
+  padding: 29px 33px;
+  overflow: hidden;
+  border-radius: 19px;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.747);
+}
+
+.search-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #06283d;
+  position: relative;
+}
+
+.search-box input {
+  color: #06283d;
+  width: 80%;
+  font-size: 23px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 42px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 10px;
+}
+
+.search-box input::placeholder {
+  color: rgb(144, 166, 184);
+  font-weight: 400;
+  font-size: 23px;
+  text-transform: none;
+}
+
+.search-box button {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: #bae6f8;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.search-box button:hover {
+  color: #fff;
+  background-color: #06283d;
+}
+
+.fa-location-dot {
+  font-size: 30px;
+}
+
+.weather {
+  margin-top: 30px;
+  text-align: center;
+  display: none;
+}
+
+.weather h1 {
+  font-size: 65px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.weather h2 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.col {
+  margin-top: 15px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details i {
+  font-size: 50px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.details p {
+  font-size: 25px;
+}
+
+.weather-image {
+  font-size: 120px; 
+  color: #bababa;
+}
+
+.fa-sun {
+  color: rgb(255, 193, 100);
+}
+
+.error {
+  color: red;
+  text-align: left;
+  margin-top: 20px;
+  display: none;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    margin: 0 10px;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .search-box {
+    gap: 18px;   
+  }
+
+  .search-box input {
+    padding-left: 15px;
+  }
+}
