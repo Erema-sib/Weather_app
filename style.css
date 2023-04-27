@@ -16,8 +16,13 @@ body {
 }
 
 .container {
-  background: linear-gradient(to top , rgb(255, 255, 255), 80%, rgb(168, 206, 240));
-  width: 500px;
+  background: linear-gradient(
+    to top,
+    rgb(255, 255, 255),
+    80%,
+    rgb(168, 206, 240)
+  );
+  width: 470px;
   height: auto;
   padding: 29px 33px;
   overflow: hidden;
@@ -37,7 +42,7 @@ body {
 .search-box input {
   color: #06283d;
   width: 80%;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 400;
   text-transform: uppercase;
   padding-left: 42px;
@@ -49,7 +54,7 @@ body {
 .search-box input::placeholder {
   color: rgb(144, 166, 184);
   font-weight: 400;
-  font-size: 23px;
+  font-size: 25px;
   text-transform: none;
 }
 
@@ -59,7 +64,8 @@ body {
   height: 40px;
   background-color: #bae6f8;
   border-radius: 50%;
-  font-size: 22px;
+  font-size: 20px;
+  margin-right: -12px;
 }
 
 .search-box button:hover {
@@ -68,7 +74,8 @@ body {
 }
 
 .fa-location-dot {
-  font-size: 30px;
+  font-size: 35px;
+  margin-left: -12px;
 }
 
 .weather {
@@ -78,13 +85,13 @@ body {
 }
 
 .weather h1 {
-  font-size: 65px;
+  font-size: 55px;
   font-weight: 700;
   margin-top: 5px;
 }
 
 .weather h2 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 500;
   margin-top: 15px;
 }
@@ -97,20 +104,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 45px;
 }
 
 .details i {
-  font-size: 50px;
+  font-size: 42px;
   margin-top: 15px;
   margin-bottom: 10px;
 }
 
 .details p {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .weather-image {
-  font-size: 120px; 
+  font-size: 100px;
   color: #bababa;
 }
 
@@ -138,7 +146,7 @@ body {
   }
 
   .search-box {
-    gap: 18px;   
+    gap: 18px;
   }
 
   .search-box input {
