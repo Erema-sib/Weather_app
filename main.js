@@ -17,14 +17,15 @@ async function checkWeather(city) {
         weather.style.display = "none";
     }
     const data = await response.json();
-    // console.log(data, "data");
+    console.log(data, "data");
 
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + " " + "&#8451";
+    document.querySelector(".descript").innerHTML = data.weather[0].description;   
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + "км/ч";
    
-    switch (data.weather[0].main) {
+    switch (data.weather[0].main || data.weather[0].description) {
         case "Clear":
             weatherIcon.className = "fa-solid fa-sun";
             break;
